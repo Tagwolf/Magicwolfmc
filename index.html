@@ -27,6 +27,28 @@
             object-fit: cover;
             z-index: -1;
         }
+        header {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1200px;
+        }
+        header a {
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 15px;
+            padding: 10px;
+            transition: 0.3s;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
         .container {
             background: rgba(0, 0, 50, 0.8);
             padding: 40px;
@@ -47,42 +69,6 @@
             font-weight: 700;
             text-shadow: 3px 3px 15px rgba(0, 136, 255, 0.5);
         }
-        .links a {
-            display: inline-block;
-            padding: 14px 24px;
-            margin: 15px;
-            background: linear-gradient(90deg, #007bff, #0056b3);
-            color: white;
-            text-decoration: none;
-            font-size: 1.3em;
-            font-weight: 700;
-            border-radius: 10px;
-            transition: all 0.4s ease-in-out;
-            box-shadow: 0px 5px 15px rgba(0, 136, 255, 0.6);
-        }
-        .links a:hover {
-            background: linear-gradient(90deg, #0056b3, #003f7f);
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0px 10px 30px rgba(0, 85, 255, 0.7);
-        }
-        .music-controls {
-            margin-top: 25px;
-        }
-        .music-controls button {
-            padding: 12px 18px;
-            font-size: 1.1em;
-            font-weight: 700;
-            background: rgba(255, 255, 255, 0.3);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s ease-in-out;
-        }
-        .music-controls button:hover {
-            background: rgba(255, 255, 255, 0.6);
-            transform: scale(1.1);
-        }
         footer {
             position: fixed;
             bottom: 0;
@@ -100,26 +86,19 @@
         <source src="https://i.imgur.com/zrWbgPd.mp4" type="video/mp4">
         Dein Browser unterstützt kein Video-Tag.
     </video>
-    <audio id="background-music" autoplay loop>
-        <source src="gardens-stylish-chill-303261.mp3" type="audio/mpeg">
-        Dein Browser unterstützt kein Audio-Tag.
-    </audio>
+    
+    <header>
+        <a href="spielersuche.html">🔍 Spielersuche</a>
+        <a href="blog.html">📝 Blog</a>
+    </header>
+
     <div class="container">
         <h1>MagicWolfMC</h1>
-        <div class="links">
-            <a href="https://discord.gg/rUfVsrV6" target="_blank">🎧 Discord</a>
-            <a href="kurs.html" target="_blank">🛒 KursRechner</a>
-            <a href="minecraft://?addExternalServer=MagicWolfMC|play.magicwolfmc.de" target="_blank">🎮 Server beitreten</a>
-            <a href="spielersuche.html" target="_blank">🔍 Spielersuche</a>
-        </div>
-        <div class="music-controls">
-            <button onclick="document.getElementById('background-music').play()">▶ Play</button>
-            <button onclick="document.getElementById('background-music').pause()">⏸ Pause</button>
-        </div>
+        <p>Willkommen auf unserer Seite! Entdecke den Spielerserver und vieles mehr.</p>
     </div>
+    
     <footer>
-        &copy; 202 MagicWolfMC - Alle Rechte vorbehalten
-        Create by Tagwolf
+        &copy; 2025 MagicWolfMC - Alle Rechte vorbehalten | Erstelle von Tagwolf
     </footer>
 </body>
 </html>
