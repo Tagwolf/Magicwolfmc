@@ -85,15 +85,18 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Spielersuche - MagicWolfMC</h1>
-        <div class="player-search">
-            <input type="text" id="player-search-input" placeholder="Spieler suchen..." />
-            <button onclick="searchPlayer()">🔍 Suchen</button>
-        </div>
-        <a href="index.html" class="back-link">← Zurück zur Startseite</a>
-    </div>
-
+    <video autoplay loop muted>
+        <source src="https://i.imgur.com/zrWbgPd.mp4" type="video/mp4">
+        Dein Browser unterstützt kein Video-Tag.
+    </video>
+    
+    <header>
+        <a href="spielersuche.html">🔍 Spielersuche</a>
+        <a href="blog.html">📝 Blog</a>
+        <a href="news.html">📰 News</a>
+        <a href="designer.html">🎨 Designer</a>
+        <a href="farmen.html">🌱 Farmen</a>
+    </header>
     <script>
         function searchPlayer() {
             const playerName = document.getElementById('player-search-input').value;
